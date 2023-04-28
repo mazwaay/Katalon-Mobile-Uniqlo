@@ -1,0 +1,51 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login_Test,,,,2023-04-28 16:09:42,2023-04-28 16:11:02,1m - 19.492s,PASSED
+,,,,,,,
+Test Cases/login_only_inputting_email,,,,2023-04-28 16:09:42,2023-04-28 16:10:02,19.697s,PASSED
+"startApplication(apk, false)",,Open the apps,,2023-04-28 16:09:43,2023-04-28 16:09:52,9.684s,PASSED
+"tap(findTestObject(""Login_Repository/login_or_register_Button""), 0)",,"Tap login on welcome sreen
+",,2023-04-28 16:09:52,2023-04-28 16:09:53,0.840s,PASSED
+"setText(findTestObject(""Login_Repository/Email_input (1)""), ""derryjhon@example.com"", 0)",,,,2023-04-28 16:09:53,2023-04-28 16:09:56,2.431s,PASSED
+"tap(findTestObject(""Login_Repository/LogIn_Button""), 0)",,Tap login on login page,,2023-04-28 16:09:56,2023-04-28 16:09:57,1.254s,PASSED
+"verifyElementText(findTestObject(""Login_Repository/Verify_error_password_notification""), ""Please enter a password."")",,Verify password notification error,,2023-04-28 16:09:57,2023-04-28 16:09:58,1.273s,PASSED
+"verifyElementText(findTestObject(""Login_Repository/Verify_error_password_requirement_notif""), ""Password must be at least 8 characters, and contain both letters and numbers."")",,Verify password requirement notification error,,2023-04-28 16:09:58,2023-04-28 16:09:58,0.200s,PASSED
+"delay(3, STOP_ON_FAILURE)",,Delay 3s,,2023-04-28 16:09:58,2023-04-28 16:10:01,3.028s,PASSED
+"takeScreenshot(""capture\login_only_inputting_email.png"", STOP_ON_FAILURE)",,Take screenshot,,2023-04-28 16:10:01,2023-04-28 16:10:02,0.403s,PASSED
+closeApplication(),,Close tha apps,,2023-04-28 16:10:02,2023-04-28 16:10:02,0.309s,PASSED
+,,,,,,,
+Test Cases/login_only_inputting_invalid_password,,,,2023-04-28 16:10:02,2023-04-28 16:10:22,19.771s,PASSED
+"startApplication(apk, false)",,Open the apps,,2023-04-28 16:10:02,2023-04-28 16:10:11,8.244s,PASSED
+"tap(findTestObject(""Login_Repository/login_or_register_Button""), 0)",,"Tap login on welcome sreen
+",,2023-04-28 16:10:11,2023-04-28 16:10:13,2.206s,PASSED
+"setText(findTestObject(""Login_Repository/Password_input (1)""), ""jhon123"", 0)",,,,2023-04-28 16:10:13,2023-04-28 16:10:16,3.512s,PASSED
+"tap(findTestObject(""Login_Repository/LogIn_Button""), 0)",,Tap login on login page,,2023-04-28 16:10:16,2023-04-28 16:10:17,0.228s,PASSED
+"verifyElementText(findTestObject(""Login_Repository/Verify_error_email_notification""), ""Please enter an email address."")",,Verify password notification error,,2023-04-28 16:10:17,2023-04-28 16:10:18,1.445s,PASSED
+"verifyElementText(findTestObject(""Login_Repository/Verify_error_password_requirement_notif""), ""Password must be at least 8 characters, and contain both letters and numbers."")",,Verify password requirement notification error,,2023-04-28 16:10:18,2023-04-28 16:10:18,0.134s,PASSED
+"verifyElementText(findTestObject(""Login_Repository/Verify_error_password_requirement_detail_notif""), ""Password must be 8 – 20 letters, and contain both letters and numbers; optionally symbols shown here can be used: - _ . @"")",,Verify password requirement notification error,,2023-04-28 16:10:18,2023-04-28 16:10:18,0.182s,PASSED
+"delay(3, STOP_ON_FAILURE)",,Delay 3s,,2023-04-28 16:10:18,2023-04-28 16:10:21,3.010s,PASSED
+"takeScreenshot(""capture\login_only_inputting_INvalid_password.png"", STOP_ON_FAILURE)",,Take screenshot,,2023-04-28 16:10:21,2023-04-28 16:10:22,0.406s,PASSED
+closeApplication(),,Close tha apps,,2023-04-28 16:10:22,2023-04-28 16:10:22,0.212s,PASSED
+,,,,,,,
+Test Cases/login_only_inputting_valid_password,,,,2023-04-28 16:10:22,2023-04-28 16:10:42,20.043s,PASSED
+"startApplication(apk, false)",,Open the apps,,2023-04-28 16:10:22,2023-04-28 16:10:31,8.532s,PASSED
+"tap(findTestObject(""Login_Repository/login_or_register_Button""), 0)",,"Tap login on welcome sreen
+",,2023-04-28 16:10:31,2023-04-28 16:10:33,2.165s,PASSED
+"setText(findTestObject(""Login_Repository/Password_input (1)""), ""@Jhon123"", 0)",,,,2023-04-28 16:10:33,2023-04-28 16:10:36,3.364s,PASSED
+"tap(findTestObject(""Login_Repository/LogIn_Button""), 0)",,Tap login on login page,,2023-04-28 16:10:36,2023-04-28 16:10:37,0.719s,PASSED
+"verifyElementText(findTestObject(""Login_Repository/Verify_error_email_notification""), ""Please enter an email address."")",,Verify password notification error,,2023-04-28 16:10:37,2023-04-28 16:10:38,1.247s,PASSED
+"verifyElementText(findTestObject(""Login_Repository/Verify_error_password_requirement_notif""), ""Password must be at least 8 characters, and contain both letters and numbers."")",,Verify password requirement notification error,,2023-04-28 16:10:38,2023-04-28 16:10:38,0.173s,PASSED
+"delay(3, STOP_ON_FAILURE)",,Delay 3s,,2023-04-28 16:10:38,2023-04-28 16:10:41,3.010s,PASSED
+"takeScreenshot(""capture\login_only_inputting_valid_password.png"", STOP_ON_FAILURE)",,Take screenshot,,2023-04-28 16:10:41,2023-04-28 16:10:42,0.421s,PASSED
+closeApplication(),,Close tha apps,,2023-04-28 16:10:42,2023-04-28 16:10:42,0.244s,PASSED
+,,,,,,,
+Test Cases/login_without_entering_email_and_password,,,,2023-04-28 16:10:42,2023-04-28 16:11:02,19.797s,PASSED
+"startApplication(apk, false)",,Open the apps,,2023-04-28 16:10:42,2023-04-28 16:10:50,8.332s,PASSED
+"tap(findTestObject(""Login_Repository/login_or_register_Button""), 0)",,"Tap login on welcome sreen
+",,2023-04-28 16:10:50,2023-04-28 16:10:53,2.080s,PASSED
+"tap(findTestObject(""Login_Repository/LogIn_Button""), 0)",,Tap login on login page,,2023-04-28 16:10:53,2023-04-28 16:10:56,3.575s,PASSED
+"verifyElementText(findTestObject(""Login_Repository/Verify_error_email_notification""), ""Please enter an email address."")",,Verify email notification error,,2023-04-28 16:10:56,2023-04-28 16:10:58,1.480s,PASSED
+"verifyElementText(findTestObject(""Login_Repository/Verify_error_password_notification""), ""Please enter a password."")",,Verify password notification error,,2023-04-28 16:10:58,2023-04-28 16:10:58,0.156s,PASSED
+"verifyElementText(findTestObject(""Login_Repository/Verify_error_password_requirement_notif""), ""Password must be at least 8 characters, and contain both letters and numbers."")",,Verify password requirement notification error,,2023-04-28 16:10:58,2023-04-28 16:10:58,0.155s,PASSED
+"delay(3, STOP_ON_FAILURE)",,Delay 3s,,2023-04-28 16:10:58,2023-04-28 16:11:01,3.013s,PASSED
+"takeScreenshot(""capture\login_without_entering_email_and_password.png"", STOP_ON_FAILURE)",,Take screenshot,,2023-04-28 16:11:01,2023-04-28 16:11:01,0.408s,PASSED
+closeApplication(),,Close tha apps,,2023-04-28 16:11:01,2023-04-28 16:11:02,0.429s,PASSED

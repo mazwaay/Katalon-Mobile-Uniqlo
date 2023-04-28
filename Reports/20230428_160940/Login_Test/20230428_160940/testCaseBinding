@@ -1,0 +1,4 @@
+{"testCaseName":"Test Cases/login_only_inputting_email","testCaseId":"Test Cases/login_only_inputting_email","iterationVariableName":""}
+{"testCaseName":"Test Cases/login_only_inputting_invalid_password","testCaseId":"Test Cases/login_only_inputting_invalid_password","iterationVariableName":""}
+{"testCaseName":"Test Cases/login_only_inputting_valid_password","testCaseId":"Test Cases/login_only_inputting_valid_password","iterationVariableName":""}
+{"testCaseName":"Test Cases/login_without_entering_email_and_password","testCaseId":"Test Cases/login_without_entering_email_and_password","iterationVariableName":""}
