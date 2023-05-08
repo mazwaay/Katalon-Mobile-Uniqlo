@@ -49,4 +49,4 @@ I will create a simple automation test using Katalon studio for [Uniqlo ID](http
 
 ## Reporting
 
-for reporting [Allure Report](https://swaglabs.netlify.app/#), check this.
+for reporting [Check this](https://github.com/mazwaay/Katalon-Mobile-Uniqlo/tree/master/Reports).
